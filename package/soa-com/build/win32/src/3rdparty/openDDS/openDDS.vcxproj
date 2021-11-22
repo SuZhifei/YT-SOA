@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D02CF903-2806-3B4E-B1CA-B95408C69D2F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>openDDS</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">openDDS.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">com-opendds</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">openDDS.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">com-opendds</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">openDDS.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">com-opendds</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">openDDS.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">com-opendds</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OPENDDS_BUILD_DLL;CMAKE_INTDIR="Debug";openDDS_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OPENDDS_BUILD_DLL;CMAKE_INTDIR=\"Debug\";openDDS_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcpsd.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_InfoRepoDiscoveryd.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Tcpd.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtpsd.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps_Udpd.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtpsd.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcpsd.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PortableServerd.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_BiDirGIOPd.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PId.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_CodecFactoryd.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_AnyTypeCoded.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAOd.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\ACEd.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib;D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/Debug/com-opendds.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/Debug/com-opendds.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDS_BUILD_DLL;CMAKE_INTDIR="Release";openDDS_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDS_BUILD_DLL;CMAKE_INTDIR=\"Release\";openDDS_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_InfoRepoDiscovery.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Tcp.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps_Udp.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcps.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PortableServer.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_BiDirGIOP.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PI.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_CodecFactory.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_AnyTypeCode.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\ACE.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib;D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/Release/com-opendds.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/Release/com-opendds.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDS_BUILD_DLL;CMAKE_INTDIR="MinSizeRel";openDDS_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDS_BUILD_DLL;CMAKE_INTDIR=\"MinSizeRel\";openDDS_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_InfoRepoDiscovery.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Tcp.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps_Udp.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcps.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PortableServer.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_BiDirGIOP.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PI.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_CodecFactory.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_AnyTypeCode.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\ACE.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib;D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/MinSizeRel/com-opendds.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/MinSizeRel/com-opendds.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDS_BUILD_DLL;CMAKE_INTDIR="RelWithDebInfo";openDDS_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDS_BUILD_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";openDDS_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Work\ZZYT\YT-SOA\package\soa-com\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include;D:\Work\ZZYT\YT-SOA\dist\win32\SOA\include\CommonAPI-3.1;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS;D:\Work\ZZYT\DDS\OpenDDS;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\TAO\orbsvcs;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_InfoRepoDiscovery.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Tcp.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps_Udp.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Rtps.lib;D:\Work\ZZYT\DDS\OpenDDS\lib\OpenDDS_Dcps.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PortableServer.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_BiDirGIOP.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_PI.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_CodecFactory.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO_AnyTypeCode.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\TAO.lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib\ACE.lib;iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib;D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/RelWithDebInfo/com-opendds.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/RelWithDebInfo/com-opendds.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\idl\Messenger.idl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating MessengerTypeSupportImpl.h, MessengerTypeSupportImpl.cpp, MessengerTypeSupport.idl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/bin/opendds_idl.exe -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS --default-nested -Wb,export_macro=openDDS_Export -Wb,export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\DDS\OpenDDS\bin\opendds_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\dds\idl\IDLTemplate.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.cpp;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupport.idl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating MessengerTypeSupportImpl.h, MessengerTypeSupportImpl.cpp, MessengerTypeSupport.idl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/bin/opendds_idl.exe -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS --default-nested -Wb,export_macro=openDDS_Export -Wb,export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\DDS\OpenDDS\bin\opendds_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\dds\idl\IDLTemplate.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.cpp;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupport.idl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating MessengerTypeSupportImpl.h, MessengerTypeSupportImpl.cpp, MessengerTypeSupport.idl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/bin/opendds_idl.exe -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS --default-nested -Wb,export_macro=openDDS_Export -Wb,export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\DDS\OpenDDS\bin\opendds_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\dds\idl\IDLTemplate.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.cpp;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupport.idl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating MessengerTypeSupportImpl.h, MessengerTypeSupportImpl.cpp, MessengerTypeSupport.idl</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/bin/opendds_idl.exe -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS --default-nested -Wb,export_macro=openDDS_Export -Wb,export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\DDS\OpenDDS\bin\opendds_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\dds\idl\IDLTemplate.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.cpp;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupport.idl</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupport.idl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating MessengerTypeSupportC.h, MessengerTypeSupportC.inl, MessengerTypeSupportS.h, MessengerTypeSupportC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/MessengerTypeSupport.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating MessengerTypeSupportC.h, MessengerTypeSupportC.inl, MessengerTypeSupportS.h, MessengerTypeSupportC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/MessengerTypeSupport.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating MessengerTypeSupportC.h, MessengerTypeSupportC.inl, MessengerTypeSupportS.h, MessengerTypeSupportC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/MessengerTypeSupport.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating MessengerTypeSupportC.h, MessengerTypeSupportC.inl, MessengerTypeSupportS.h, MessengerTypeSupportC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/MessengerTypeSupport.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\CMakeFiles\aea021c7fe9f1a040a2bba4fba1b00e1\MessengerC.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating MessengerC.h, MessengerC.inl, MessengerS.h, MessengerC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\idl\Messenger.idl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating MessengerC.h, MessengerC.inl, MessengerS.h, MessengerC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\idl\Messenger.idl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating MessengerC.h, MessengerC.inl, MessengerS.h, MessengerC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\idl\Messenger.idl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating MessengerC.h, MessengerC.inl, MessengerS.h, MessengerC.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -E env DDS_ROOT=D:/Work/ZZYT/DDS/OpenDDS TAO_ROOT=D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO "PATH=D:\Program Files (x86)\cmder\vendor\git-for-windows\cmd;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\Program Files (x86)\cmder\vendor\conemu-maximus5;D:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files\cmake-3.21.3-windows-x86_64\bin;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\lib;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin;D:\Work\ZZYT\DDS\OpenDDS\lib;D:\Work\ZZYT\DDS\OpenDDS\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\37683\AppData\Local\activestate\cache\bin;C:\Users\37683\AppData\Local\ActiveState\StateTool\release;C:\Users\37683\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\mingw64\bin;D:\Program Files (x86)\cmder\vendor\git-for-windows\usr\bin;D:\Program Files (x86)\cmder\vendor\bin;D:\Program Files (x86)\cmder;D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/lib" D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/tao_idl.exe -g D:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/bin/ace_gperf.exe -Sp -Sd -Sg -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h --idl-version 4 -as --unknown-annotations ignore -ID:/Work/ZZYT/DDS/OpenDDS/ACE_wrappers/TAO -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS -ID:/Work/ZZYT/DDS/OpenDDS -ID:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl -Wb,stub_export_include=D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/openDDS_export.h -Wb,stub_export_macro=openDDS_Export -SS "-Yp,D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/cl.exe" -Sa -St D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/idl/Messenger.idl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\tao_idl.exe;D:\Work\ZZYT\DDS\OpenDDS\ACE_wrappers\bin\ace_gperf.exe;D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\idl\Messenger.idl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.inl;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerS.h;D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -SD:/Work/ZZYT/YT-SOA/package/soa-com -BD:/Work/ZZYT/YT-SOA/package/soa-com/build/win32 --check-stamp-file D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -SD:/Work/ZZYT/YT-SOA/package/soa-com -BD:/Work/ZZYT/YT-SOA/package/soa-com/build/win32 --check-stamp-file D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -SD:/Work/ZZYT/YT-SOA/package/soa-com -BD:/Work/ZZYT/YT-SOA/package/soa-com/build/win32 --check-stamp-file D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Work/ZZYT/YT-SOA/package/soa-com/src/3rdparty/openDDS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -SD:/Work/ZZYT/YT-SOA/package/soa-com -BD:/Work/ZZYT/YT-SOA/package/soa-com/build/win32 --check-stamp-file D:/Work/ZZYT/YT-SOA/package/soa-com/build/win32/src/3rdparty/openDDS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\openDDS_export.h" />
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.h" />
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.h" />
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.inl" />
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerS.h" />
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.h" />
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.inl" />
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportS.h" />
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.cpp" />
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.cpp" />
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\ZERO_CHECK.vcxproj">
+      <Project>{1423FDE9-3962-3BF2-835D-B1077358BA31}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

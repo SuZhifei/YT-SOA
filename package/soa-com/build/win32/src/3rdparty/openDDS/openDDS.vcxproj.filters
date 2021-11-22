@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\openDDS_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportImpl.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerC.inl">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerS.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportC.inl">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupportS.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\idl\Messenger.idl">
+      <Filter>IDL Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\MessengerTypeSupport.idl">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\CMakeFiles\aea021c7fe9f1a040a2bba4fba1b00e1\MessengerC.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\openDDS\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8CCE834C-0E2B-3E84-BFE0-7A8406966A09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{99BF1677-AEFE-3E4D-BC25-139694E31C22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DF32CCAB-FA68-3608-ACA4-F3ACBFCD2874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IDL Files">
+      <UniqueIdentifier>{AE8808A8-0397-319F-8D50-716F53FCB79F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

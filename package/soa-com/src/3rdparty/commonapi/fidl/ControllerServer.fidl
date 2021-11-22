@@ -1,0 +1,48 @@
+package soa.com
+
+import soa.com.Types.* from "comTypes.fidl"
+
+interface ControllerServer {
+    version {
+        major 1
+        minor 0
+    }
+	
+    method SetBoolean {
+        in {
+			String	path
+            Boolean value
+			UInt64 	timestamp
+        }
+    }
+
+	method SetInteger {
+        in {
+			String	path
+            Int32 	value
+			UInt64 	timestamp
+        }
+    }
+    method SetReal {
+        in {
+			String	path
+            Double 	value
+			UInt64 	timestamp
+        }
+    }
+    method SetString {
+        in {
+			String	path
+            String 	value
+			UInt64 	timestamp
+        }
+    }
+
+	method SetEnum {
+        in {
+			String	path
+            Int32 	value
+			UInt64 	timestamp
+        }
+    }
+}

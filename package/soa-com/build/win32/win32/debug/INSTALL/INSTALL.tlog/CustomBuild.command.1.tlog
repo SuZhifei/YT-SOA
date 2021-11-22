@@ -1,0 +1,10 @@
+^D:\WORK\ZZYT\YT-SOA\PACKAGE\SOA-COM\BUILD\WIN32\CMAKEFILES\279C1680567E81E78E63684CDA2F17D0\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

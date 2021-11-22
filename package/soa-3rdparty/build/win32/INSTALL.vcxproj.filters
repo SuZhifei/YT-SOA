@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-3rdparty\build\win32\CMakeFiles\09b24caca2a0aa7f9421f87c1b73d3ff\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{00D2643A-71CE-3DA3-94AA-A4590B2C2E1B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

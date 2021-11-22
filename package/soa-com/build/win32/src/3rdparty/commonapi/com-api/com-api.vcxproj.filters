@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\commonapi\com-api\capi-gen\v1\soa\com\ControllerServerStubDefault.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\commonapi\com-api\capi-gen\v1\soa\com\ListenerServerStubDefault.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\3rdparty\commonapi\com-api\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CFA0497E-3932-3F17-BB17-FB328AD93F32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

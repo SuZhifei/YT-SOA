@@ -1,0 +1,11 @@
+prefix=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release
+exec_prefix=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release
+libdir=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release/lib
+includedir=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release/include
+
+Name: 
+Description: New SOME/IP stack, feature complete
+Version: 2.5.2
+Libs: -L${libdir} -lvsomeip -lvsomeip-sd -lboost_system -lboost_log -lboost_filesystem
+Cflags: -I${includedir}
+

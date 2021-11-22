@@ -1,0 +1,11 @@
+prefix=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release
+exec_prefix=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release
+libdir=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release/lib
+includedir=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-x86_64/release/include
+
+Name: 
+Description: GENIVI Common API C++ Library
+Version: 3.1.10
+Libs: -L${libdir} -lCommonAPI
+Cflags: -I${includedir}/CommonAPI-3.1
+

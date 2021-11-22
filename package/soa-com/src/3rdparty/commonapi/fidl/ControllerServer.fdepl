@@ -1,0 +1,40 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-SOMEIP_deployment_spec.fdepl"
+import "ComTypes.fdepl"
+import "ControllerServer.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface soa.com.ControllerServer {
+	SomeIpServiceID = 90000
+
+    method SetBoolean {
+        SomeIpMethodID = 1
+		SomeIpReliable = true
+    }
+
+    method SetInteger {
+        SomeIpMethodID = 2
+		SomeIpReliable = true
+    }
+
+    method SetReal {
+        SomeIpMethodID = 3
+		SomeIpReliable = true
+    }
+
+    method SetString {
+        SomeIpMethodID = 4
+		SomeIpReliable = true
+    }
+
+    method SetEnum {
+        SomeIpMethodID = 5
+		SomeIpReliable = true
+    }
+}
+
+define org.genivi.commonapi.someip.deployment for provider Service {
+    instance soa.com.ControllerServer {
+        InstanceId = "soa.com.controller"
+
+        SomeIpInstanceID = 91000
+    }
+}

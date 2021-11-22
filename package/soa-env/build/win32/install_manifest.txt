@@ -1,0 +1,4 @@
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/etc/commonapi.ini
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/etc/soa.com.startup.bat
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/etc/soa.env.bat
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/etc/vsomeip-dataservice.json

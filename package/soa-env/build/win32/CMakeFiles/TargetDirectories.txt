@@ -1,0 +1,3 @@
+D:/Work/ZZYT/YT-SOA/package/soa-env/build/win32/CMakeFiles/INSTALL.dir
+D:/Work/ZZYT/YT-SOA/package/soa-env/build/win32/CMakeFiles/ALL_BUILD.dir
+D:/Work/ZZYT/YT-SOA/package/soa-env/build/win32/CMakeFiles/ZERO_CHECK.dir

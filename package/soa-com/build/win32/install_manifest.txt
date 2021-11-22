@@ -1,0 +1,12 @@
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/debug/com-someip.lib
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/debug/com-someip.dll
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/debug/com-opendds.lib
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/debug/com-opendds.dll
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/debug/soa_com.lib
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/lib/debug/soa_com.dll
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/bin/debug/soa.com.service.exe
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/include/soa/CMakeLists.txt
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/include/soa/com/Controller.h
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/include/soa/com/Listener.h
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/bin/debug/soa.test.com-controller.exe
+D:/Work/ZZYT/YT-SOA/dist/win32/SOA/bin/debug/soa.test.com-listener.exe

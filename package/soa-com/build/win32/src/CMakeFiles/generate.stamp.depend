@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/CheckIncludeFile.c.in
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/CheckLibraryExists.cmake
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/FindPackageMessage.cmake
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/FindThreads.cmake
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake
+D:/Program Files/cmake-3.21.3-windows-x86_64/share/cmake-3.21/Modules/SelectLibraryConfigurations.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/OpenDDSConfig.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/OpenDDSConfigVersion.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/api_macros.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/config.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/dds_idl_sources.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/init.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/options.cmake
+D:/Work/ZZYT/DDS/OpenDDS/cmake/tao_idl_sources.cmake
+D:/Work/ZZYT/YT-SOA/package/soa-com/src/CMakeLists.txt

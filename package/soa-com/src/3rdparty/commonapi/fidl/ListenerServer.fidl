@@ -1,0 +1,58 @@
+package soa.com
+
+import soa.com.Types.* from "ComTypes.fidl"
+
+interface ListenerServer {
+    version {
+        major 1
+        minor 0
+    }
+	
+	method SayHello {
+		in {
+			Int32 pid
+			String	path
+		}
+	}
+	
+    broadcast NotifyBoolean selective {
+        out {
+			String	path
+            Boolean value
+			UInt64 	timestamp
+        }
+    }
+
+    broadcast NotifyInteger selective {
+        out {
+			String	path
+            Int32 	value
+			UInt64 	timestamp
+        }
+    }
+
+    broadcast NotifyReal selective {
+        out {
+			String	path
+            Double 	value
+			UInt64 	timestamp
+        }
+    }
+
+    broadcast NotifyString selective {
+        out {
+			String	path
+            String 	value
+			UInt64 	timestamp
+        }
+    }
+
+    broadcast NotifyEnum selective {
+        out {
+			String	path
+            Int32 	value
+			UInt64 	timestamp
+        }
+    }
+	
+}

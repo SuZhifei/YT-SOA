@@ -1,0 +1,13 @@
+prefix=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-aarch64/release
+exec_prefix=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-aarch64/release
+libdir=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-aarch64/release/lib
+includedir=/work/2019716/uit-repo/package/uit-3rdparty/dist/qnx-aarch64/release/include
+
+Name: 
+Description: C++ CommonAPI SOME/IP Runtime
+Version: 3.1.10
+Libs: -L${libdir} -lCommonAPI-SomeIP
+Requires: CommonAPI
+Requires.private: vsomeip
+Cflags: -I${includedir}/CommonAPI-3.1
+

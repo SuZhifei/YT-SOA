@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\comLib\Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\comLib\Listener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\comLib\Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\comLib\someip\ControllerStubImp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\comLib\someip\ListenerStubImp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\include\com\Controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\include\com\Listener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\comLib\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Work\ZZYT\YT-SOA\package\soa-com\build\win32\src\3rdparty\openDDS\openDDS_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work\ZZYT\YT-SOA\package\soa-com\src\comLib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DF32CCAB-FA68-3608-ACA4-F3ACBFCD2874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CFA0497E-3932-3F17-BB17-FB328AD93F32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

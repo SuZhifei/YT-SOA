@@ -1,0 +1,10 @@
+^D:\WORK\ZZYT\YT-SOA\PACKAGE\SOA-3RDPARTY\BUILD\WIN32\CMAKEFILES\09B24CACA2A0AA7F9421F87C1B73D3FF\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\cmake-3.21.3-windows-x86_64\bin\cmake.exe" -SD:/Work/ZZYT/YT-SOA/package/soa-3rdparty -BD:/Work/ZZYT/YT-SOA/package/soa-3rdparty/build/win32 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Work/ZZYT/YT-SOA/package/soa-3rdparty/build/win32/soa-3rdparty.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
